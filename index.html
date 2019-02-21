@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="fetchissue()">
     <div class="container">
         <h1>IssueTracker <small>by Pankaj Yadav</small></h1>
         <div class="jumbotron">
@@ -38,8 +38,15 @@
                     <label for="issueassign">Assigned To</label>
                      <input type="text" class="form-control" id="issueassignedto" placeholder="Enter Name to Assign..">
                   </div>
+                  <button type="submit" class = "btn btn-primary">ADD</button>
             </form>
         </div>
+        <div class="col-lg-12">
+            <div id="issuelist">
+
+            </div>
+        </div>
+        <div class="footer">&copy PankajYadav</div>
     </div>
     
 </body>
